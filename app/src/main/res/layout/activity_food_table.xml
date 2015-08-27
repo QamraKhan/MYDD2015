@@ -7,17 +7,7 @@
     tools:context="com.example.android.mydd2015.foodTableActivity">
 
 
-    <Button
-        android:id="@+id/buttonExpiring"
-        android:layout_marginTop="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="What is expiring..."
-        android:textSize="10dp"
-        android:layout_centerHorizontal="true"
-        android:background="#D50000"
-        android:textColor="#FFFFFF"
-        />
+
 
 
     <ImageButton
@@ -27,7 +17,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/raspberries"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/buttonExpiring"
+
         />
 
     <ImageButton    android:id="@+id/imageButtonBanana"
@@ -37,7 +27,7 @@
         android:src="@drawable/bananas"
         android:layout_centerHorizontal="true"
         android:layout_toLeftOf="@id/imageButtonRaspberry"
-        android:layout_below="@id/buttonExpiring"
+        android:onClick="getBananaDetailActivity"
         />
 
     <ImageButton
@@ -49,7 +39,7 @@
         android:src="@drawable/oranges"
         android:layout_centerHorizontal="true"
         android:layout_toRightOf="@id/imageButtonRaspberry"
-        android:layout_below="@id/buttonExpiring"
+
         />
 
     <ImageButton
@@ -121,7 +111,19 @@
         android:layout_below="@id/imageButtonSpinach"
         />
 
-
+    <Button
+        android:id="@+id/buttonExpiring"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is expiring?"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#D32F2F"
+        android:textColor="#000000"
+        android:onClick="getExpiringFoodActivity"
+        android:layout_below="@id/imageButtonBeef"
+        />
 
 
 

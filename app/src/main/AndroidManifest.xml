@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/avocado72px"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -29,6 +29,22 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.mydd2015.MainActivity" />
+        </activity>
+        <activity
+            android:name=".expiringFoodActivity"
+            android:label="@string/title_activity_expiring_food"
+            android:parentActivityName=".foodTableActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.mydd2015.foodTableActivity" />
+        </activity>
+        <activity
+            android:name=".bananaDetailActivity"
+            android:label="@string/title_activity_banana_detail"
+            android:parentActivityName=".foodTableActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.mydd2015.foodTableActivity" />
         </activity>
     </application>
 

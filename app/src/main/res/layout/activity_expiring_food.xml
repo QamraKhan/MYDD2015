@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.mydd2015.expiringFoodActivity">
+
+
+    <TextView
+        android:id="@+id/redItemsExpiringTextView"
+        style="@style/myExpiringFoodTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:text="Items expiring in 1 day" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRedItemsExpiring"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redItemsExpiringTextView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/redexpiringfood" />
+
+    <TextView
+        android:id="@+id/yellowItemsExpiringTextView"
+        style="@style/myExpiringFoodTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imageButtonRedItemsExpiring"
+        android:layout_marginTop="16dp"
+        android:text="Items expiring in 2 days:" />
+
+    <ImageButton
+        android:id="@+id/imageButtonYellowItemsExpiring"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yellowItemsExpiringTextView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/yellowexpiringfood" />
+
+    <TextView
+        android:id="@+id/greenItemsExpiringTextView"
+        style="@style/myExpiringFoodTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imageButtonYellowItemsExpiring"
+        android:layout_marginTop="16dp"
+        android:text="Items expiring in 3 days" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGreenItemsExpiring"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greenItemsExpiringTextView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/greenexpiringfood" />
+</RelativeLayout>
