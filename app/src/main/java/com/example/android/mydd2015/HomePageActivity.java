@@ -100,7 +100,7 @@ public class HomePageActivity extends ActionBarActivity {
             // so that they can be closed in the finally block.
             HttpURLConnection urlConnection = null;
             BufferedReader reader = null;
-            String sb="";
+            //String sb="";
 
             // Will contain the raw JSON response as a string.
             String forecastJsonStr = null;
@@ -121,12 +121,12 @@ public class HomePageActivity extends ActionBarActivity {
                 int status = urlConnection2.getResponseCode();
                 BufferedReader br = new BufferedReader(new InputStreamReader(urlConnection2.getInputStream()));
                 //end of new one
-                //StringBuilder sb = new StringBuilder();
+                StringBuilder sb = new StringBuilder();
 
                 while ((line2 = br.readLine()) != null) {
-                    sb=sb+(line2);// + "\n");
+                    sb=sb.append(line2);// + "\n");
                 }
-                sb2=sb.toString();
+               // sb2=sb.toString();
                 br.close();
             } catch (IOException e) {
                 Log.e(LOG_TAG, "Error ", e);
@@ -134,7 +134,7 @@ public class HomePageActivity extends ActionBarActivity {
             } finally {
 
 
-                return sb2;
+                return line2;
 
             }
                 // return line2;
