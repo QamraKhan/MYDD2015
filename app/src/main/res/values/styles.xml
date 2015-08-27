@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#009688</item>
+        <item name="colorPrimaryDark">#00796B</item>
+        <item name="colorAccent">#536DFE</item>
+        <item name="android:background">#E1BEE7</item>
+    </style>
+
+
+    <style name="myUrlTextView">
+        <!-- Customize your theme here. -->
+
+        <item name="android:background">#F8BBD0</item>
+    </style>
+
+    
+    <style name="myUrlPathTextView">
+        <!-- Customize your theme here. -->
+
+        <item name="android:background">#F48FB1</item>
+    </style>
+</resources>
