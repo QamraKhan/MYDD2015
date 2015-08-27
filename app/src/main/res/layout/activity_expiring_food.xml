@@ -20,7 +20,7 @@
 
     <ImageButton
         android:id="@+id/imageButtonRedItemsExpiring"
-
+        android:onClick="getBananaSmoothieRecipe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/redItemsExpiringTextView"

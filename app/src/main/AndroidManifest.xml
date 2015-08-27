@@ -46,6 +46,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.mydd2015.foodTableActivity" />
         </activity>
+        <activity
+            android:name=".bananaSmoothieActivity"
+            android:label="@string/title_activity_banana_smoothie"
+            android:parentActivityName=".expiringFoodActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.mydd2015.expiringFoodActivity" />
+        </activity>
     </application>
 
 </manifest>

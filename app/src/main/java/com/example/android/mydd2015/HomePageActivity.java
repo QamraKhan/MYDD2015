@@ -17,7 +17,10 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.DataOutputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -38,8 +41,8 @@ public class HomePageActivity extends ActionBarActivity {
 
         m2XURLClass.execute();
         TextView textviewUrlPathTemp = (TextView) findViewById(R.id.m2xUrlPathTextView);
-        String urlPathTemp = "https://api-m2x.att.com/v2/devices/02h280h4j05536hh19k5il21i085997i/streams/temperature/values?start=2014-10-01T12:00:00Z&end=2014-10-03T12:00:00Z&limit=3&pretty%22%20-H%20%22X-M2X-KEY:%207611hg8391k834829gkff640j8j990i2%22";
-        textviewUrlPathTemp.setText(urlPathTemp);
+       // String urlPathTemp = "https://api-m2x.att.com/v2/devices/02h280h4j05536hh19k5il21i085997i/streams/temperature/values?start=2014-10-01T12:00:00Z&end=2014-10-03T12:00:00Z&limit=3&pretty%22%20-H%20%22X-M2X-KEY:%207611hg8391k834829gkff640j8j990i2%22";
+        //textviewUrlPathTemp.setText(urlPathTemp);
     }
 
     @Override
@@ -104,7 +107,7 @@ public class HomePageActivity extends ActionBarActivity {
 
             // Will contain the raw JSON response as a string.
             String forecastJsonStr = null;
-            String line2="";
+            String line2= null;
 
             try {
                 // Construct the URL for the OpenWeatherMap query
@@ -122,18 +125,39 @@ public class HomePageActivity extends ActionBarActivity {
                 BufferedReader br = new BufferedReader(new InputStreamReader(urlConnection2.getInputStream()));
                 //end of new one
                 StringBuilder sb = new StringBuilder();
-
+                StringBuffer buffer = new StringBuffer();
                 while ((line2 = br.readLine()) != null) {
                     sb=sb.append(line2);// + "\n");
+                    buffer.append(line2 + "\n");
                 }
+                if (buffer.length() == 0) {
+                    // Stream was empty.  No point in parsing.
+                    return null;
+                }
+                line2 = buffer.toString();
+
+
                // sb2=sb.toString();
                 br.close();
             } catch (IOException e) {
                 Log.e(LOG_TAG, "Error ", e);
                 return null;
             } finally {
-
-
+try {
+    final String VALUE_STRING = "values";
+    JSONObject jsonObject1 = new JSONObject(line2);
+    Log.v("blah",jsonObject1.toString());
+    JSONArray jsonArray1 = jsonObject1.getJSONArray(VALUE_STRING);
+    JSONObject jsonObject2 = jsonArray1.getJSONObject(0);
+    line2=jsonObject2.toString();
+    Log.v("blah",jsonArray1.toString());
+int gTest;
+    gTest=1;
+}catch (JSONException eJSONcatcher) {
+    int dTest;
+    dTest=1;
+}
+}
                 return line2;
 
             }
@@ -212,13 +236,12 @@ public class HomePageActivity extends ActionBarActivity {
 
         }*/
 
-       /*         @Override
+               @Override
                 protected void onPostExecute(String result){
                     TextView textview = (TextView) findViewById(R.id.m2xUrlTextView);
                     textview.setText(result);
-                }*/
+                }
 
             }
 
         }
-    }

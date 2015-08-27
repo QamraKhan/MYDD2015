@@ -1,25 +1,23 @@
 package com.example.android.mydd2015;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 
-public class expiringFoodActivity extends ActionBarActivity {
+public class bananaSmoothieActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_expiring_food);
+        setContentView(R.layout.activity_banana_smoothie);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_expiring_food, menu);
+        getMenuInflater().inflate(R.menu.menu_banana_smoothie, menu);
         return true;
     }
 
@@ -36,10 +34,5 @@ public class expiringFoodActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void getBananaSmoothieRecipe(View view){
-        Intent launchDetailActivity=new Intent(this, bananaSmoothieActivity.class);///Intent(getActivity(), HomePageActivity.class);//.putExtra(Intent.EXTRA_TEXT,forecast);
-        startActivity(launchDetailActivity);
     }
 }
