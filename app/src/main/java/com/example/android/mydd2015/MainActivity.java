@@ -52,7 +52,7 @@ public class MainActivity extends ActionBarActivity {
         if(usernameString.equalsIgnoreCase("admin") && userPasswordString.equalsIgnoreCase("admin")){
 //go to another page
             //correcct password
-            Intent launchDetailActivity=new Intent(this, HomePageActivity.class);///Intent(getActivity(), HomePageActivity.class);//.putExtra(Intent.EXTRA_TEXT,forecast);
+            Intent launchDetailActivity=new Intent(this, foodTableActivity.class);///Intent(getActivity(), HomePageActivity.class);//.putExtra(Intent.EXTRA_TEXT,forecast);
             startActivity(launchDetailActivity);
 
         }else{
@@ -64,5 +64,15 @@ public class MainActivity extends ActionBarActivity {
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
         }
+    }
+
+    public void testM2x(View view){
+
+//go to another page
+            //correcct password
+            Intent launchDetailActivity=new Intent(this, HomePageActivity.class);///Intent(getActivity(), HomePageActivity.class);//.putExtra(Intent.EXTRA_TEXT,forecast);
+            startActivity(launchDetailActivity);
+
+
     }
 }
