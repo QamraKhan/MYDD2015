@@ -75,4 +75,13 @@ public class MainActivity extends ActionBarActivity {
 
 
     }
+    public void testM2xGroceries(View view){
+
+//go to another page
+        //correcct password
+        Intent launchDetailActivity=new Intent(this, getGroceriesActivity.class);///Intent(getActivity(), HomePageActivity.class);//.putExtra(Intent.EXTRA_TEXT,forecast);
+        startActivity(launchDetailActivity);
+
+
+    }
 }
