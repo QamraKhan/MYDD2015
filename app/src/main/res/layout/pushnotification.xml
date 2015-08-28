@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/toast_layout_root"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal">
 
     <ImageView
@@ -15,12 +15,12 @@
 
     <TextView
         style="@style/myLoginButton"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/pushnotificationtoast"
         android:layout_alignBottom="@+id/pushnotificationtoast"
         android:layout_toRightOf="@drawable/avocado72px"
         android:layout_weight="4"
         android:text="The items in your cart are nearly expiring"
-        android:textSize="10dp" />
+        android:textSize="20dp" />
 </RelativeLayout>

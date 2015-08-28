@@ -70,4 +70,8 @@ public class foodTableActivity extends ActionBarActivity {
         Intent launchDetailActivity=new Intent(this, bananaDetailActivity.class);///Intent(getActivity(), HomePageActivity.class);//.putExtra(Intent.EXTRA_TEXT,forecast);
         startActivity(launchDetailActivity);
     }
+    public void getOrderSummary(View view){
+        Intent launchDetailActivity=new Intent(this, orderSummaryActivity.class);///Intent(getActivity(), HomePageActivity.class);//.putExtra(Intent.EXTRA_TEXT,forecast);
+        startActivity(launchDetailActivity);
+    }
 }
