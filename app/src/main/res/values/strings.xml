@@ -9,6 +9,7 @@
     <string name="title_activity_expiring_food">expiringFoodActivity</string>
     <string name="title_activity_banana_detail">bananaDetailActivity</string>
     <string name="title_activity_banana_smoothie">bananaSmoothieActivity</string>
+    <string name="title_activity_groceries">groceriesActivity</string>
 
 
 

@@ -11,35 +11,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Recipes for you:Banana, peanut butter smoothie"
-
+        android:layout_marginTop="16dp"
         />
-
+    <TextView
+        android:id="@+id/textViewBananaSmoothie1a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banana, peanut butter smoothie"
+        android:layout_below="@id/textViewBananaSmoothie1"
+        />
 
     <ImageView
         android:id="@+id/imageViewBananaSmoothie"
+        android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/bananasmoothie"
-        android:layout_below="@id/textViewBananaSmoothie1"
+        android:layout_below="@id/textViewBananaSmoothie1a"
         />
     <TextView
         android:id="@+id/textViewBananaSmoothie2"
-
+        android:layout_marginTop="16dp"
         android:text="Recommended items from your cart:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
         android:layout_below="@id/imageViewBananaSmoothie"
+
         />
 
     <ImageView
         android:id="@+id/imageViewBananaSmoothie2"
-
+        android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/greekyoghurt"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
         android:layout_below="@id/textViewBananaSmoothie2"
+
         />
 
     <ImageView
@@ -47,8 +56,8 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/greekyoghurt"
-        android:layout_alignParentRight="true"
+        android:src="@drawable/bananas"
+
         android:layout_below="@id/textViewBananaSmoothie2"
         android:layout_toRightOf="@id/imageViewBananaSmoothie2"
         />
@@ -61,6 +70,8 @@
         android:src="@drawable/greekyoghurt"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/imageViewBananaSmoothie3"
-
+        android:layout_marginTop="16dp"
+        android:text="Full Recipe"
+        android:background="#689F38"
         />
 </RelativeLayout>

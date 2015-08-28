@@ -54,6 +54,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.mydd2015.expiringFoodActivity" />
         </activity>
+
     </application>
 
 </manifest>

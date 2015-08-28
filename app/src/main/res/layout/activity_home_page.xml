@@ -7,7 +7,7 @@
     tools:context="com.example.android.mydd2015.HomePageActivity">
 
     <TextView android:id="@+id/m2xUrlTextView"
-        android:text="@string/hello_world"
+        android:text="Wait for it...."
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
@@ -15,7 +15,7 @@
         />
 
     <TextView android:id="@+id/m2xUrlPathTextView"
-        android:text="@string/hello_world"
+        android:text="Wait for it...."
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"

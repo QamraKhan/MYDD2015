@@ -2,19 +2,11 @@ package com.example.android.mydd2015;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-
 public class expiringFoodActivity extends ActionBarActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_expiring_food);
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -37,7 +29,6 @@ public class expiringFoodActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
     public void getBananaSmoothieRecipe(View view){
         Intent launchDetailActivity=new Intent(this, bananaSmoothieActivity.class);///Intent(getActivity(), HomePageActivity.class);//.putExtra(Intent.EXTRA_TEXT,forecast);
         startActivity(launchDetailActivity);
