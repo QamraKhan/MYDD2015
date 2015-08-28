@@ -1,12 +1,18 @@
 package com.example.android.mydd2015;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class foodTableActivity extends ActionBarActivity {
@@ -40,6 +46,22 @@ public class foodTableActivity extends ActionBarActivity {
     }
 
     public void getExpiringFoodActivity(View view){
+
+
+
+        Context context=getApplicationContext();
+        LayoutInflater inflater=getLayoutInflater();
+
+        View customToastroot =inflater.inflate(R.layout.pushnotification, null);
+
+        Toast customtoast=new Toast(context);
+
+        customtoast.setView(customToastroot);
+        customtoast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL,0, 0);
+        customtoast.setDuration(Toast.LENGTH_LONG);
+        customtoast.show();
+
+
         Intent launchDetailActivity=new Intent(this, expiringFoodActivity.class);///Intent(getActivity(), HomePageActivity.class);//.putExtra(Intent.EXTRA_TEXT,forecast);
         startActivity(launchDetailActivity);
     }

@@ -58,7 +58,7 @@ public class MainActivity extends ActionBarActivity {
         }else{
             //wrong password--toast
             Context context = getApplicationContext();
-            CharSequence text = "Wrong password, try again DICKHEAD!!!";
+            CharSequence text = "Wrong password, try again :(!!!";
             int duration = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(context, text, duration);

@@ -1,77 +1,76 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.android.mydd2015.bananaSmoothieActivity">
 
     <TextView
         android:id="@+id/textViewBananaSmoothie1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recipes for you:Banana, peanut butter smoothie"
         android:layout_marginTop="16dp"
-        />
+        android:text="Recipes for you:" />
+
     <TextView
         android:id="@+id/textViewBananaSmoothie1a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Banana, peanut butter smoothie"
         android:layout_below="@id/textViewBananaSmoothie1"
-        />
+        android:text="Banana, peanut butter smoothie" />
 
     <ImageView
         android:id="@+id/imageViewBananaSmoothie"
-        android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/bananasmoothie"
         android:layout_below="@id/textViewBananaSmoothie1a"
-        />
+        android:layout_marginTop="16dp"
+        android:src="@drawable/bananasmoothie" />
+
     <TextView
         android:id="@+id/textViewBananaSmoothie2"
-        android:layout_marginTop="16dp"
-        android:text="Recommended items from your cart:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/imageViewBananaSmoothie"
+        android:layout_marginTop="16dp"
+        android:text="Recommended items from your cart:"
 
         />
 
     <ImageView
         android:id="@+id/imageViewBananaSmoothie2"
-        android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/greekyoghurt"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/textViewBananaSmoothie2"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/greekyoghurt"
 
         />
 
     <ImageView
         android:id="@+id/imageViewBananaSmoothie3"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/bananas"
-
         android:layout_below="@id/textViewBananaSmoothie2"
+        android:layout_marginTop="16dp"
+
         android:layout_toRightOf="@id/imageViewBananaSmoothie2"
-        />
+        android:src="@drawable/bananas" />
 
     <Button
         android:id="@+id/buttonBananaSmoothie"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/greekyoghurt"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/imageViewBananaSmoothie3"
         android:layout_marginTop="16dp"
-        android:text="Full Recipe"
         android:background="#689F38"
-        />
+        android:src="@drawable/greekyoghurt"
+        android:text="Full Recipe" />
 </RelativeLayout>

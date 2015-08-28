@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:name=".HomePageActivity"
-            android:label="@string/app_name" >
+            android:label="TESTM2X" >
         </activity>
         <activity
             android:name=".foodTableActivity"
@@ -56,7 +56,7 @@
         </activity>
         <activity
             android:name=".getGroceriesActivity"
-            android:label="@string/app_name"
+            android:label="TESTM2XGROCERIES"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
