@@ -14,12 +14,13 @@
         style="@style/myUrlTextView"
         />
 
-    <TextView android:id="@+id/m2xUrlPathTextView"
-        android:text="Wait for it...."
+
+
+    <ImageView android:id="@+id/m2xImageView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:src="@drawable/speed3"
         android:layout_below="@id/m2xUrlTextView"
-        style="@style/myUrlPathTextView"
         />
+
 </RelativeLayout>

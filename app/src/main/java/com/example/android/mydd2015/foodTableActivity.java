@@ -58,7 +58,7 @@ public class foodTableActivity extends ActionBarActivity {
 
         customtoast.setView(customToastroot);
         customtoast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL,0, 0);
-        customtoast.setDuration(Toast.LENGTH_LONG);
+        customtoast.setDuration(Toast.LENGTH_SHORT);
         customtoast.show();
 
 

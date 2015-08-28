@@ -22,5 +22,16 @@
         android:layout_below="@id/m2xUrlTextViewGroceries"
         style="@style/myUrlPathTextView"
         />
-
+    <ImageView android:id="@+id/m2xImageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:src="@drawable/daystoexpiry2"
+        android:layout_below="@id/m2xUrlTextViewDaysToExpiry"
+        />
+    <ImageView android:id="@+id/m2xImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/daystoexpiry"
+        android:layout_below="@id/m2xImageView1"
+        />
 </RelativeLayout>

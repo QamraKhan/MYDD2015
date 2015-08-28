@@ -40,7 +40,7 @@ public class HomePageActivity extends ActionBarActivity {
         M2XURLClass m2XURLClass = new M2XURLClass();
 
         m2XURLClass.execute();
-        TextView textviewUrlPathTemp = (TextView) findViewById(R.id.m2xUrlPathTextView);
+       // TextView textviewUrlPathTemp = (TextView) findViewById(R.id.m2xUrlPathTextView);
        // String urlPathTemp = "https://api-m2x.att.com/v2/devices/02h280h4j05536hh19k5il21i085997i/streams/temperature/values?start=2014-10-01T12:00:00Z&end=2014-10-03T12:00:00Z&limit=3&pretty%22%20-H%20%22X-M2X-KEY:%207611hg8391k834829gkff640j8j990i2%22";
         //textviewUrlPathTemp.setText(urlPathTemp);
     }
